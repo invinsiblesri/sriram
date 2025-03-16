@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Upload</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Movie Upload Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#upload">Upload Movie</a></li>
+        <li><a href="#gallery">Movie Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="upload">
+    <h2>Upload a New Movie</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="movieTitle">Movie Title:</label>
+      <input type="text" id="movieTitle" name="movieTitle" required>
+      <label for="movieFile">Select Movie File:</label>
+      <input type="file" id="movieFile" name="movieFile" accept="video/*" required>
+      <button type="submit" name="submit">Upload Movie</button>
+    </form>
+  </section>
+  <section id="gallery">
+    <h2>Uploaded Movies</h2>
+    <div class="movie-gallery">
+      <!-- Movie thumbnails will be displayed here -->
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Movie Upload Portal</p>
+  </footer>
+</body>
+</html>
